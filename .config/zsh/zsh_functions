@@ -1,3 +1,5 @@
+#!/bin/sh
+
 ## Git
 git_commit_all () {
 	git add -A;
