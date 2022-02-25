@@ -3,11 +3,3 @@
 .gitignore
 .gitmodules
 .stow-local-ignore
-.*.example
-^/@.*
-KeybdPrefs_.*.png
-Safari_.*.png
-README.*
-TODO.*
-RCS
-.*.secrets.*
