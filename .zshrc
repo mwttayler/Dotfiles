@@ -4,7 +4,7 @@
 ZSH_THEME="robbyrussell"
 
 # Plugins
-plugins=(git)
+plugins=(git adb aliases git-auto-fetch)
 
 # Config
 export ZDOTDIR=~/.config/zsh
