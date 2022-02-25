@@ -1,0 +1,18 @@
+#!/bin/sh
+
+## Android
+export ANDROID_HOME="/Users/$USER/Library/Android/sdk"
+export PATH="${PATH}:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools"
+## Tools
+export TOOLS="/Users/$USER/Tools"
+export PATH="${PATH}:$TOOLS"
+## Java
+export JAVA="/usr/local/opt/openjdk@11/bin"
+export PATH="$PATH:$JAVA"
+## Bin
+export BIN="~/bin"
+export PATH="$PATH:$BIN"
+## Homebrew
+export PATH=/opt/homebrew/bin:$PATH
+## GPG
+export GPG_TTY=$(tty)

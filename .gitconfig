@@ -1,0 +1,14 @@
+[user]
+	name = Max Tayler
+	email = maxtayler1@gmail.com
+	signingkey = DB0CD0BFE13D3039
+[gpg]
+	program = gpg
+[commit]
+	gpgsign = true
+[pull]
+	rebase = false
+[init]
+	defaultBranch = main
+[core]
+	excludesfile = ~/.gitignore_global
