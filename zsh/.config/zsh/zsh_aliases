@@ -7,6 +7,8 @@ alias rm='rm -i'
 
 ## Directory Shortcuts
 alias development="~/Documents/Development"
+alias dice_fan_app="~/Documents/Development/android-dice"
+alias dice_onsite_app="~/Documents/Development/android-onsite"
 alias dotfiles="~/Dotfiles/"
 
 ## Sublime
@@ -17,16 +19,3 @@ alias my_ip="curl http://ipecho.net/plain; echo"
 
 ## ADB
 alias deeplink="adb shell am start -d"
-
-## Git
-alias git_tree="git log --pretty=oneline -n 20 --graph --abbrev-commit"
-alias git_echo_branch_name="git rev-parse --abbrev-ref HEAD"
-alias git_echo_status="git status -s"
-alias git_echo_tags="git tag -l"
-alias git_echo_branches="git branch --all"
-alias git_echo_remotes="git remote --verbose"
-alias git_force_push="git push --force-with-lease"
-alias git_publish="git push -u origin \$(git_echo_branch_name)"
-alias git_delete_merged_branches="git branch --merged | grep -v '\\*' | xargs -n 1 git branch -d"
-alias git_reset="git reset --hard HEAD"
-alias git_parent="git show-branch | grep '*' | grep -v \"\$(git rev-parse --abbrev-ref HEAD)\" | head -n1 | sed 's/.*\\[\\(.*\\)\\].*/\\1/' | sed 's/[\\^~].*//' #"
