@@ -1,7 +1,8 @@
 .DS_Store
+
 zsh/.config/zsh/.zcompdump-*
 zsh/.config/zsh/.zsh_history
-*.gpg*
-*keys*
-*.kbx*
-*revocs*
+
+gnupg/.gnupg/*
+!gnupg/.gnupg/gpg-agent.conf
+!gnupg/.gnupg/gpg.conf

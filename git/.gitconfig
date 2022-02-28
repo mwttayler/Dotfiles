@@ -1,7 +1,7 @@
 [user]
 	name = Max Tayler
 	email = maxtayler1@gmail.com
-	signingkey = DB0CD0BFE13D3039
+	signingkey = 7FAFCE60
 [gpg]
 	program = gpg
 [commit]
@@ -10,5 +10,3 @@
 	rebase = false
 [init]
 	defaultBranch = main
-[core]
-	excludesfile = ~/.gitignore_global
