@@ -1,3 +1,3 @@
-[submodule "~/Dotfiles/zsh/.config/zsh/ohmyzsh"]
-	path = ~/Dotfiles/zsh/.config/zsh/ohmyzsh
+[submodule "zsh/.config/zsh/ohmyzsh"]
+	path = zsh/.config/zsh/ohmyzsh
 	url = https://github.com/ohmyzsh/ohmyzsh.git

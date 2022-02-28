@@ -15,3 +15,5 @@ source $ZDOTDIR/zsh_exports
 source $ZDOTDIR/zsh_aliases
 
 HISTFILE=$ZDOTDIR/.zsh_history
+
+typeset -U PATH

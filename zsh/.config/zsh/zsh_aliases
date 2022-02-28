@@ -1,10 +1,5 @@
 #!/bin/sh
 
-# Confirm before overwriting something
-alias cp="cp -i"
-alias mv='mv -i'
-alias rm='rm -i'
-
 ## Directory Shortcuts
 alias development="~/Documents/Development"
 alias dice_fan_app="~/Documents/Development/android-dice"
