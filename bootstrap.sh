@@ -8,3 +8,6 @@ brew install gnupg
 
 # Install Stow
 brew install stow
+
+# Install kdiff3
+brew install kdiff3
