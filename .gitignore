@@ -6,3 +6,5 @@ zsh/.config/zsh/.zsh_history
 gnupg/.gnupg/*
 !gnupg/.gnupg/gpg-agent.conf
 !gnupg/.gnupg/gpg.conf
+
+zsh/.config/iterm2/
