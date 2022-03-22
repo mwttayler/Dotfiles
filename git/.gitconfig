@@ -14,8 +14,8 @@
     l = log --pretty=oneline --graph
     s = status -s
     branches = branch -a
-    amend = commit --amend --no-edit
-    ca = "!f() { git commit -m $1 -a; }; f"
+    amend = commit --amend --no-edit -a
+    pf = push --force-with-lease
     branchname = "!f() { git rev-parse --abbrev-ref HEAD; }; f"
     publish = "!f() { git push origin --set-upstream $(git branchname); }; f"
 [diff]
