@@ -13,11 +13,16 @@
 [alias]
     l = log --pretty=oneline --graph
     s = status -s
-    branches = branch -a
     amend = commit --amend --no-edit -a
     pf = push --force-with-lease
     branchname = "!f() { git rev-parse --abbrev-ref HEAD; }; f"
     publish = "!f() { git push origin --set-upstream $(git branchname); }; f"
+    co = checkout
+    ca = "!f() { git commit -m \"$1\" -a; }; f"
+    br = branch --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(contents:subject) %(color:green)(%(committerdate:relative)) [%(authorname)]' --sort=-committerdate
+    d = branch -D
+    cob = checkout -b
+    delete-tag-with-pattern = "!f() { git tag -d $(git tag -l \"$1*\") && git push -d origin $(git tag -l \"$1*\"); }; f"
 [diff]
     tool = kdiff3
 [difftool]
