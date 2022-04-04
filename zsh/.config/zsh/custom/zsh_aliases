@@ -14,3 +14,6 @@ alias my_ip="curl http://ipecho.net/plain; echo"
 
 ## ADB
 alias deeplink="adb shell am start -d"
+
+## Chrome
+alias github="open -a \"/Applications/Google Chrome.app\" http://www.github.com"
