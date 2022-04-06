@@ -15,18 +15,11 @@
     s = status -s
     amend = commit --amend --no-edit -a
     pf = push --force-with-lease
-    branchname = "!f() { git rev-parse --abbrev-ref HEAD; }; f"
-    publish = "!f() { git push origin --set-upstream $(git branchname); }; f"
+    p = "!f() { git push origin --set-upstream $(git rev-parse --abbrev-ref HEAD); }; f"
     co = checkout
     ca = "!f() { git commit -m \"$1\" -a; }; f"
     br = branch --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(contents:subject) %(color:green)(%(committerdate:relative)) [%(authorname)]' --sort=-committerdate
     d = branch -D
     cob = checkout -b
+    t = "!f() { git tag \"$1\" && git push origin \"$1\"; }; f"
     delete-tag-with-pattern = "!f() { git push -d origin $(git tag -l \"$1*\") && git tag -d $(git tag -l \"$1*\"); }; f"
-[diff]
-    tool = kdiff3
-[difftool]
-    prompt = false
-[merge]
-    tool = kdiff3
-    conflictstyle = diff3
