@@ -11,15 +11,14 @@
 [init]
 	defaultBranch = main
 [alias]
-    l = log --pretty=oneline --graph
-    s = status -s
+    ll = log --graph --decorate --pretty='%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%ad) %C(bold blue)<%an>%Creset' --date=short
+    st = status -s
     amend = commit --amend --no-edit -a
-    pf = push --force-with-lease
-    p = "!f() { git push origin --set-upstream $(git rev-parse --abbrev-ref HEAD); }; f"
-    co = checkout
-    ca = "!f() { git commit -m \"$1\" -a; }; f"
-    br = branch --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(contents:subject) %(color:green)(%(committerdate:relative)) [%(authorname)]' --sort=-committerdate
-    d = branch -D
-    cob = checkout -b
-    t = "!f() { git tag \"$1\" && git push origin \"$1\"; }; f"
-    delete-tag-with-pattern = "!f() { git push -d origin $(git tag -l \"$1*\") && git tag -d $(git tag -l \"$1*\"); }; f"
+    fpush = push --force-with-lease
+    publish = "!f() { git push origin --set-upstream $(git rev-parse --abbrev-ref HEAD); }; f"
+    cm = "!f() { git commit -m \"$1\" -a; }; f"
+    ptag = "!f() { git tag \"$1\" && git push origin \"$1\"; }; f"
+    dtags = "!f() { git tag --delete $(git tag --list \"$1*\"); }; f"
+    echo-branches = "!f() { echo $(git branch --format='%(refname:short)\\n') | tr -d ' '; }; f"
+[core]
+    excludesfile = ~/.gitignore_global
