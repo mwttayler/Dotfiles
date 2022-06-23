@@ -1,7 +1,7 @@
 [user]
 	name = Max Tayler
 	email = maxtayler1@gmail.com
-	signingkey = 7FAFCE60
+	signingkey = 693E12A2860C0272
 [gpg]
 	program = gpg
 [commit]
@@ -19,6 +19,7 @@
     cm = "!f() { git commit -m \"$1\" -a; }; f"
     ptag = "!f() { git tag \"$1\" && git push origin \"$1\"; }; f"
     dtags = "!f() { git tag --delete $(git tag --list \"$1*\"); }; f"
-    echo-branches = "!f() { echo $(git branch --format='%(refname:short)\\n') | tr -d ' '; }; f"
+    echo-branches = for-each-ref --format='%(refname:short) ' refs/heads/
+    co = checkout
 [core]
     excludesfile = ~/.gitignore_global

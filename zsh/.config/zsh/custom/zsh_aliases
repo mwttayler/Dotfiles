@@ -2,8 +2,8 @@
 
 ## Directory Shortcuts
 alias development="~/Documents/Development"
-alias dice="~/Documents/Development/android-dice"
-alias dice_onsite="~/Documents/Development/android-onsite"
+alias dice="~/Documents/Development/android/DICE-Fan"
+alias dice_onsite="~/Documents/Development/android/DICE-Onsite"
 alias dotfiles="~/Dotfiles/"
 
 ## Sublime
