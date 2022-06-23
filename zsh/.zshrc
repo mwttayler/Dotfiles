@@ -24,6 +24,7 @@ export ZSH_CUSTOM=$ZDOTDIR/custom
 source $ZDOTDIR/ohmyzsh/oh-my-zsh.sh
 source $ZSH_CUSTOM/zsh_exports
 source $ZSH_CUSTOM/zsh_aliases
+source $ZSH_CUSTOM/zsh_functions
 
 HISTFILE=$ZDOTDIR/.zsh_history
 

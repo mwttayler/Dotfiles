@@ -1,0 +1,8 @@
+open_as_html () {
+    temp_dir=$(mktemp -d)
+
+    "$@" > out.html && open out.html
+
+    trap "rm -rf -- $temp_dir" EXIT
+}
+
