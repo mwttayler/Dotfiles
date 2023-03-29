@@ -3,8 +3,10 @@
 # Install Homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-# Install iTerm
-brew install --cask iterm2
+# Install Hyper
+brew install --cask hyper
+sudo ln -s "/Applications/Hyper.app/Contents/Resources/bin/hyper" /usr/local/bin/hyper
+hyper install hyper-dracula
 
 # Install GnuPG to enable PGP-signing commits.
 brew install gnupg
