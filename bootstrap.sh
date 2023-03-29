@@ -19,6 +19,10 @@ cd fonts
 cd ..
 rm -rf fonts
 
+# Install Fantasque Sans Mono
+brew tap homebrew/cask-fonts
+brew install font-fantasque-sans-mono --cask
+
 # Install fzf
 brew install fzf
 $(brew --prefix)/opt/fzf/install

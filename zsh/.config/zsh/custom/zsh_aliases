@@ -2,12 +2,9 @@
 
 ## Directory Shortcuts
 alias development="~/Documents/Development"
-alias dice="~/Documents/Development/android/DICE-Fan"
-alias dice_onsite="~/Documents/Development/android/DICE-Onsite"
+alias dice="~/Documents/Development/Android/DICE-Fan"
+alias dice_onsite="~/Documents/Development/Android/DICE-Onsite"
 alias dotfiles="~/Dotfiles/"
-
-## Sublime
-alias edit="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
 
 ## Networking
 alias my_ip="curl http://ipecho.net/plain; echo"
