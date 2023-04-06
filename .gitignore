@@ -2,6 +2,7 @@
 
 zsh/.config/zsh/.zcompdump-*
 zsh/.config/zsh/.zsh_history
+zsh/.config/zsh/custom/zsh_secrets
 
 gnupg/.gnupg/*
 !gnupg/.gnupg/gpg-agent.conf
