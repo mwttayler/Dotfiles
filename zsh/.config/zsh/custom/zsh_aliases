@@ -15,3 +15,6 @@ alias deeplink="adb shell am start -d"
 ## Chrome
 alias github_open="open -a \"/Applications/Google Chrome.app\" https://www.github.com"
 alias bitrise_open="open -a \"/Applications/Google Chrome.app\" https://app.bitrise.io/dashboard"
+
+## DICE
+alias publish_qa="python3 ~/Documents/Development/Android/DICE-Fan/scripts/ci-cd/publish_qa.py"

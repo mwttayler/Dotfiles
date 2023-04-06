@@ -14,7 +14,10 @@ export ZSH_CUSTOM=$ZDOTDIR/custom
 source $ZDOTDIR/ohmyzsh/oh-my-zsh.sh
 source $ZSH_CUSTOM/zsh_exports
 source $ZSH_CUSTOM/zsh_aliases
-source $ZSH_CUSTOM/zsh_functions
+if [ -f $ZSH_CUSTOM/zsh_secrets ]; then
+    source $ZSH_CUSTOM/zsh_secrets
+fi
+
 ## FZF
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
